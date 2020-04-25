@@ -150,6 +150,8 @@ header {
 .lesson-icon {
   position: relative;
   border-radius: 50%;
+  width: 300; 
+  height: 300;
   
 }
 
