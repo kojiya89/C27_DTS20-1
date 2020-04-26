@@ -36,11 +36,12 @@ header {
   
   .header-left {
     float: left;
+    margin-left: 20px;
   }
   
   .header-right {
     float: right;
-    margin-right: -25px;
+    margin-right: 20px;
   }
   
   .header-right a {
@@ -184,6 +185,7 @@ header {
     padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    margin-left: 20px;
   }
 
  .copyright {
