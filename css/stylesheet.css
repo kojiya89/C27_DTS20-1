@@ -15,114 +15,182 @@ a {
   clear: left;
 }
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 20px;
+  }
+  .logo-text {
+    color: white;
+    margin-top: 15px;
 
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+
+  .menu-icon {
+    color: white;
+    float: right;
+    display: none;
+    visibility: hidden;
+  }
+  
+
+    /* Header */
+
+
+/*Animasi Tombol */
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    /*opacity: 0.8;*/
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+.btn:hover {
+    /*opacity: 1;*/
+    position: relative;
+    top: 2px;
+    box-shadow: 0 5px #1a7940;
+  }
+
+.message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+  }
+  
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+  /*Animasi Tombol */
+
+
+  /* Animasi sliding */
+
+.slide {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    position: relative;
+    background-color:skyblue;
+    box-shadow: 0 7px lightseagreen;
+    animation-name: example;
+    animation-duration: 2s;
+  }
+  
+  @keyframes example {
+    0%   {background-color: skyblue; left:0px;}
+    50%  {background-color: greenyellow; left:500px;}
+    100% {background-color: skyblue; left:0px;}
+    
+  }
+
+  /* Animasi sliding */
+
+  
+  
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-image: url(Team.png);
   background-size: cover;
+  background-blend-mode: overlay;
   color: white;
   text-align: center;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
 
 .btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .signup {
+    background-color: #239b76;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
+  
+  .twitter {
+    background-color: #55acee;
+  }
 
-.btn-wrapper p {
-  margin: 10px 0;
-}
 
-.signup {
-  background-color: #239b76;
-}
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
+  /*footer*/
 
-.twitter {
-  background-color: #55acee;
-}
+  footer p {
+    font-size: 16px;
+    line-height: 8px;
+  }
 
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
+  footer a {
+    color: white;
+  }
+  
+  footer {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
 
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
+ .copyright {
+      text-align: center;
+  }
+  
+  /*footer*/
 
 .lesson-wrapper {
   padding-bottom: 80px;
@@ -176,31 +244,3 @@ header {
   padding-bottom: 80px;
   text-align: center;
 }
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
