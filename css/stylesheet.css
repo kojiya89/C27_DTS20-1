@@ -213,6 +213,100 @@ header {
 }
 /* Akhir css untuk bagian Utama */ 
 
+/* Awal css untuk contact us form */
+.contact-form {
+  padding: 25px 0;
+  width: 100%;
+  background-color: #f1f5f8;
+}
+
+.form-heading {
+  color: #5f5d60;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-heading h2 {
+  margin-bottom: 20px;
+}
+
+.form-heading p {
+  font-size: 18px;
+  color: #5f5d60;
+}
+
+.form-heading hr {
+  margin-bottom: 50px;
+  border-top: 4px #5f5d60;
+}
+
+form label {
+  color: #5f5d60;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  border: 1px solid #dee7ec;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  padding: 5px 10px;
+  flex-wrap: wrap;
+}
+
+.row-15 {
+  width: 15%;
+}
+
+.row-75 {
+  width: 75%;
+}
+
+.row-100 {
+  width: 52.5%;
+}
+
+.btn-send {
+  padding: 15px 55px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #053779;
+  color: #fff;
+  position: relative;
+
+  z-index: 1;
+}
+
+.btn-send::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease-in;
+}
+
+.btn-send:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* Awal css untuk contact us form */
+
 
 /* Awal css untuk bagian footer*/
 footer p {
