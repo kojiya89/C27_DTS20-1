@@ -183,9 +183,9 @@ header {
   footer {
     padding-top: 5px;
     padding-bottom: 20px;
+    padding-left: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    margin-left: 20px;
   }
 
  .copyright {
