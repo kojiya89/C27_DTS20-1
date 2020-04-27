@@ -26,6 +26,7 @@
   
   .btn {
     width: 150px;
+    margin: auto;
   }
   
   .facebook {
@@ -33,7 +34,7 @@
   }
   
   .top-wrapper {
-    text-align: left;
+    text-align: center;
   }
   
   /* Tambahkan CSS untuk header-right */
